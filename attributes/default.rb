@@ -103,6 +103,7 @@ end
 default['kong']['manage_ssl_certificate'] = nil
 default['kong']['wait_for_cassandra'] = 300
 default['kong']['manage_cassandra'] = nil
+default['kong']['manage_postgres'] = nil
 
 if Gem::Requirement.new('>= 0.6.0')
                    .satisfied_by?(Gem::Version.new(node['kong']['version']))
